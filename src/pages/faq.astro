@@ -1,0 +1,29 @@
+---
+import Layout from "../layouts/Layout.astro";
+import FaqComponent from "../components/FaqComponent.jsx";
+
+---
+
+<Layout title="Welcome to FAQ">
+    <main
+        class="flex flex-col justify-center z-10 items-center h-[900px] max-sm:h-screen max-sm:mb-20"
+    >
+        <img
+            src="/img/globals/img-hero-max.webp"
+            alt="image the bsolute"
+            class="absolute -z-10 opacity-50 pt-20"
+            decoding="async"
+            loading="lazy"
+        />
+
+        <div class="text-center space-y-4">
+            <p class="text-[#80ED99] -mt-24">frequent questions</p>
+            <h2 class="font-semibold text-4xl">FAQ</h2>
+            <p class="text-[#667085]">
+                Everything you need to know about us and the platform
+            </p>
+        </div>
+
+        <FaqComponent client:load />
+    </main>
+</Layout>
