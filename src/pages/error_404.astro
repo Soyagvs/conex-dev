@@ -1,0 +1,44 @@
+---
+import LayoutError from "../layouts/LayoutError.astro";
+---
+
+<LayoutError title="404 Not Found">
+    <main class="flex items-center justify-center h-[60rem]">
+        <div class="flex justify-center items-center -space-x-20">
+            <div class="flex-col justify-center items-center">
+                <h2 class="text-[#7F56D9] -mb-5">404</h2>
+                <p class="text-4xl w-[400px]">
+                    It seems that we are missing something.
+                </p>
+                <button
+                    class="bg-[#57CC99] text-white rounded-2xl h-11 w-40 mt-3"
+                >
+                    <a href="/"> Go back to home </a>
+                </button>
+            </div>
+            <img
+                src="/img/globals/img-hero.webp"
+                alt="image to bg2"
+                decoding="async"
+                loading="lazy"
+            />
+            <div class="flex justify-end items-center">
+                <img
+                    src="/img/globals/404image.webp"
+                    alt="image to bg"
+                    class="absolute"
+                    decoding="async"
+                    loading="lazy"
+                />
+            </div>
+        </div>
+    </main>
+</LayoutError>
+<style>
+    h2 {
+        font-size: 200px;
+    }
+    a {
+        height: 100px;
+    }
+</style>
