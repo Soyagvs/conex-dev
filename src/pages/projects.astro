@@ -1,0 +1,34 @@
+---
+import Layout from "../layouts/Layout.astro";
+import ProjectsCard from "../components/ProjectsCard.astro";
+---
+
+<Layout title="Welcome to Projects">
+    <main
+        class="flex flex-col justify-center items-center h-[900px] max-sm:h-auto max-sm:mt-36 max-sm:mb-10"
+    >
+        <img
+            src="/img/globals/img-hero-max.webp"
+            alt="image the bsolute"
+            class="absolute -z-10 opacity-50 pt-20"
+            decoding="async"
+            loading="lazy"
+        />
+        <div class="text-center space-y-4">
+            <p class="text-[#80ED99] -mt-32">Projects</p>
+            <h2 class="font-semibold text-4xl text-[#001D3D]">
+                Featured projects
+            </h2>
+            <p class="text-[#667085] max-sm:text-center">
+                Here you will see the projects in weekly trends.
+            </p>
+        </div>
+        <div
+            class="grid grid-cols-3 max-sm:grid-cols-1 justify-center items-center gap-5 pt-20"
+        >
+            <ProjectsCard />
+            <ProjectsCard />
+            <ProjectsCard />
+        </div>
+    </main>
+</Layout>
